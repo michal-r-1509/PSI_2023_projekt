@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Usługi budowlane</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+</head>
+<body>
+<header class="gradient">
+    <div class="header_container">
+        <h2><a href="../index.html">USŁUGI BUDOWLANE</a></h2>
+        <nav class="navbar navbar-expand-sm justify-content-center">
+            <span><a href="../services/index.html"><i class="fa fa-industry"></i> USŁUGI</a></span>
+            <span><a href="../jobs/index.html"><i class="fa fa-briefcase"></i> PRACA</a></span>
+            <span><a href="index.html"><i class="fa fa-envelope"></i> KONTAKT</a></span>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <h4>Skontaktuj się z nami</h4>
+    <form id="contact-form" class="was-validated">
+        <div class="mb-3">
+            <label for="email" class="form-label">Adres email:</label>
+            <input type="email" id="email" name="email" placeholder="uslugibudowlane@ub.pl" required>
+            <div class="valid-feedback">&nbsp</div>
+            <div class="invalid-feedback">Proszę uzupełnić pole</div>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Twoja wiadomość:</label>
+            <textarea id="message" rows="4" cols="50" minlength="50" placeholder="wpisz wiadomość..."
+                      required></textarea>
+            <div class="valid-feedback">&nbsp</div>
+            <div class="invalid-feedback">Proszę uzupełnić pole</div>
+        </div>
+        <button type="submit">Wyślij</button>
+    </form>
+</div>
+
+<div id="facebook-ribbon">
+    <a id="facebook-link" href="https://www.facebook.com" target="_blank">
+        <img src="../favicon/icons8-facebook.svg" alt="f">
+    </a>
+</div>
+
+<div class="modal_info" id="information_modal" style="display: none">
+    <div class="info_modal_text">wiadomość wysłano</div>
+    <button class="close">OK</button>
+</div>
+
+<div id="overlay"></div>
+
+<footer class="gradient">
+    <div class="header_container">
+        <p class="footer_text">&copy; 2023 Usługi Budowlane</p>
+        <p class="footer_text">Michał Raducki, rok akad. 2023/2024</p>
+    </div>
+</footer>
+
+</body>
+<script src="script.js"></script>
+</html>
